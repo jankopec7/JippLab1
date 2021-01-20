@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <fstream>
 #include <time.h>
+#include <exception>
 
 using namespace std;
 
@@ -10,6 +11,7 @@ using namespace std;
 
 // dodatkowy konstruktor jako argument przyjmujący ścieżkę do pliku o podanym wcześniej formacie i na jego podstawie tworzący nową macierz na podstawie przekazanego pliku
 Matrix::Matrix(string filename){
+try{
     fstream file;
     file.open(filename, ios::in);
     if(file.good()){
@@ -23,10 +25,13 @@ Matrix::Matrix(string filename){
             }
         }
         file.close();
+        }
+        else {
+            throw runtime_error("Bląd podczas tworzenia macierzy.");
+        }
     }
-    else {
-        cout << "Nie udało się stworzyć macierzy" << endl;
-        exit(EXIT_FAILURE);
+    catch(const std::exception &e){
+        cerr << e.what() <<endl;
     }
 }
 
@@ -64,29 +69,32 @@ Matrix::~Matrix(){
 
 // set(n, m, val) - metoda ustawiająca wartość elementu (n, m) na val
 double Matrix::set(int n, int m, double val){
+try{
     if((n < 0) || (n >= w) || (m < 0) || (m >= k)){
-        cout << "Błąd danych" << endl;
-        exit(EXIT_FAILURE);
+     throw runtime_error("Bląd podczas ustawiania wartosci elementu.");
     }
     return macierz[n][m] = val;
 }
-
+catch(const exception &e){
+    cerr << e.what() << endl;
+}
+}
 // get(n, m) - metoda pobierająca element (n, m)
 double Matrix::get(int n, int m){
+
     if(n < w && n >= 0 && m < k && m >= 0){
     return macierz[n][m];
 	}
-	else {
-		cout << "Błąd danych" << endl;
-        exit(EXIT_FAILURE);
-	} 
-}
+    else 
+        throw runtime_error("Bląd podczas pobierania elementow.");
+
+    }
 
  // add(Matrix m2) - metoda przyjmująca jako argument inną macierz i zwracająca jako wynik nową macierz będącą sumą bieżącej macierzy oraz macierzy przekazanej jako argument
 Matrix* Matrix::add(Matrix &m2){
+try{
     if((w != m2.w) || (k != m2.k)){
-        cout << "Błąd danych" << endl;
-        exit(EXIT_FAILURE);
+        throw runtime_error("Bląd podczas dodawania.");
     }
     Matrix *wynik = new Matrix(w,k);
     double wart = 0;
@@ -97,14 +105,17 @@ Matrix* Matrix::add(Matrix &m2){
         }
     }
     return wynik;
+    }
+    catch(const exception &e){
+        cerr << e.what() << endl;
+    }
     
 }
 // subtract(Matrix m2) - metoda przyjmująca jako argument inną macierz i zwracająca jako wynik nową macierz będącą różnicą bieżącej macierzy oraz macierzy przekazanej jako argument
 Matrix* Matrix::subtract(Matrix &m2){
-
+try{
     if((w != m2.w) || (k != m2.k)){
-        cout << "Błąd danych" << endl;
-        exit(EXIT_FAILURE);
+        throw runtime_error("Bląd podczas odejmowania.");
     }
     Matrix *wynik= new Matrix(w, k);
     double wart = 0;
@@ -116,14 +127,17 @@ Matrix* Matrix::subtract(Matrix &m2){
         }
     }
     return wynik;
-    
+    }
+    catch(const exception &e){
+        cerr << e.what() << endl;
+    }
 }
-
+    
 // multiply(Matrix m2) - metoda przyjmująca jako argument inną macierz i zwracająca jako wynik nową macierz będącą iloczynem bieżącej macierzy oraz macierzy przekazanej jako argument
 Matrix* Matrix::multiply(Matrix &m2){
+try{
     if(k != m2.w){
-    	cout << "Błąd danych" << endl;
-    	exit(EXIT_FAILURE);
+        throw runtime_error("Bląd podczas mnozenia.");
     }
     Matrix* wynik = new Matrix(w, m2.k);
 	double wart = 0;
@@ -137,6 +151,10 @@ Matrix* Matrix::multiply(Matrix &m2){
 		}
 	}
     return wynik;
+    }
+    catch(const exception &e){
+        cerr << e.what() << endl;
+    }
 }
 
 // cols() - metoda zwracająca liczbę kolumn macierzy
@@ -161,6 +179,7 @@ void Matrix::print(){
 
 // store(std::string filename, std::string path) - metoda zapisująca macierz w pliku; w pliku powinny być zapisane wymiary macierzy (liczba kolumn i liczba wierszy w pierwszym wierszu pliku) oraz jej zawartość (każdy wiersz macierzy w osobnym wierszu pliku)
 bool Matrix::store(string filename, string path){
+    try{
     fstream file;
     file.open((path + filename).c_str(), ios::out);
     if(file.good()){
@@ -171,9 +190,13 @@ bool Matrix::store(string filename, string path){
             file << endl;
         }
         file.close();
-        return true;
+        }
+        else
+            throw runtime_error("Bląd zapisu.");
     }
-    else
+    catch(const exception &e) {
+        cerr << e.what() <<endl;
+    }
         return false;
 }
 
