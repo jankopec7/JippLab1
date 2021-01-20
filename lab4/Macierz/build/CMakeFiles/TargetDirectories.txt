@@ -1,0 +1,3 @@
+/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles/rebuild_cache.dir
+/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles/edit_cache.dir
+/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles/zadanie.dir
