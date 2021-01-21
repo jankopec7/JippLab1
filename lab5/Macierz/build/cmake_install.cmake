@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz
+# Install script for directory: /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

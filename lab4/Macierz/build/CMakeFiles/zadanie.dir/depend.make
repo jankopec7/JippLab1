@@ -4,5 +4,6 @@
 CMakeFiles/zadanie.dir/src/macierz.cpp.o: ../include/macierz.hpp
 CMakeFiles/zadanie.dir/src/macierz.cpp.o: ../src/macierz.cpp
 
+CMakeFiles/zadanie.dir/src/main.cpp.o: ../include/macierz.hpp
 CMakeFiles/zadanie.dir/src/main.cpp.o: ../src/main.cpp
 

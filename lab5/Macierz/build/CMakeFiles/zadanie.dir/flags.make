@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/./include -I/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/./src
+CXX_INCLUDES = -I/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/./include -I/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/./src
 
 CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -std=gnu++17
 

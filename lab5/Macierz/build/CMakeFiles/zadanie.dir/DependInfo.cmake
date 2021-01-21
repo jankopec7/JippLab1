@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/macierz.cpp" "/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles/zadanie.dir/src/macierz.cpp.o"
-  "/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/main.cpp" "/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles/zadanie.dir/src/main.cpp.o"
+  "/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.cpp" "/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/CMakeFiles/zadanie.dir/src/macierz.cpp.o"
+  "/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/main.cpp" "/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/CMakeFiles/zadanie.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

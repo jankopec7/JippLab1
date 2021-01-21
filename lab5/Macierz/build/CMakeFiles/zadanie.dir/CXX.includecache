@@ -10,7 +10,7 @@
 iostream
 -
 
-/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/macierz.cpp
+/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.cpp
 iostream
 -
 iomanip
@@ -22,5 +22,13 @@ time.h
 exception
 -
 macierz.hpp
-/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/macierz.hpp
+/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.hpp
+
+/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/main.cpp
+iostream
+-
+time.h
+-
+macierz.hpp
+/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.hpp
 

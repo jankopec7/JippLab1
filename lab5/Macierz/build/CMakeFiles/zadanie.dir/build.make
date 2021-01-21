@@ -62,10 +62,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz
+CMAKE_SOURCE_DIR = /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build
+CMAKE_BINARY_DIR = /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/zadanie.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/zadanie.dir/flags.make
 
 CMakeFiles/zadanie.dir/src/main.cpp.o: CMakeFiles/zadanie.dir/flags.make
 CMakeFiles/zadanie.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/zadanie.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zadanie.dir/src/main.cpp.o -c /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/zadanie.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zadanie.dir/src/main.cpp.o -c /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/main.cpp
 
 CMakeFiles/zadanie.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zadanie.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/main.cpp > CMakeFiles/zadanie.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/main.cpp > CMakeFiles/zadanie.dir/src/main.cpp.i
 
 CMakeFiles/zadanie.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zadanie.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/main.cpp -o CMakeFiles/zadanie.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/main.cpp -o CMakeFiles/zadanie.dir/src/main.cpp.s
 
 CMakeFiles/zadanie.dir/src/macierz.cpp.o: CMakeFiles/zadanie.dir/flags.make
 CMakeFiles/zadanie.dir/src/macierz.cpp.o: ../src/macierz.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/zadanie.dir/src/macierz.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zadanie.dir/src/macierz.cpp.o -c /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/macierz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/zadanie.dir/src/macierz.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zadanie.dir/src/macierz.cpp.o -c /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.cpp
 
 CMakeFiles/zadanie.dir/src/macierz.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zadanie.dir/src/macierz.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/macierz.cpp > CMakeFiles/zadanie.dir/src/macierz.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.cpp > CMakeFiles/zadanie.dir/src/macierz.cpp.i
 
 CMakeFiles/zadanie.dir/src/macierz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zadanie.dir/src/macierz.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/src/macierz.cpp -o CMakeFiles/zadanie.dir/src/macierz.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/src/macierz.cpp -o CMakeFiles/zadanie.dir/src/macierz.cpp.s
 
 # Object files for target zadanie
 zadanie_OBJECTS = \
@@ -114,7 +114,7 @@ zadanie: CMakeFiles/zadanie.dir/src/main.cpp.o
 zadanie: CMakeFiles/zadanie.dir/src/macierz.cpp.o
 zadanie: CMakeFiles/zadanie.dir/build.make
 zadanie: CMakeFiles/zadanie.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable zadanie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable zadanie"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zadanie.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/zadanie.dir/clean:
 .PHONY : CMakeFiles/zadanie.dir/clean
 
 CMakeFiles/zadanie.dir/depend:
-	cd /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build /Users/jankopec/Desktop/jipplab/JippLab1/lab4/Macierz/build/CMakeFiles/zadanie.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build /Users/jankopec/desktop/jipplab/JippLab1/lab5/Macierz/build/CMakeFiles/zadanie.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zadanie.dir/depend
 
