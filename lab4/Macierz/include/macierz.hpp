@@ -17,20 +17,10 @@ class Matrix {
 		Matrix(int w, int k, double *macierz);
 		Matrix(int n);
 
-		Matrix* operator+(Matrix &m2);
-		Matrix* operator-(Matrix &m2);
-		Matrix* operator*(Matrix &m2);
-
-		bool operator==(Matrix &m2);
-		double* operator[](int);
-		bool operator!=(Matrix &m2);
-		void operator++(int);
-		void operator--(int);
-/*
 		Matrix* add(Matrix &m2)noexcept(false);	
 		Matrix* subtract(Matrix &m2)noexcept(false);
 		Matrix* multiply(Matrix &m2)noexcept(false);
-*/
+
 		int cols();
 		int rows();
 		void print();
