@@ -9,6 +9,116 @@ using namespace std;
 #include "macierz.hpp"
 
 
+//operatory
+
+Matrix* Matrix ::operator+(Matrix &m2){
+
+    if((w != m2.w) || (k != m2.k)){
+        cout<< ("Bląd rozmiaru macierzy.") <<endl;
+
+    }
+    Matrix *wynik = new Matrix(w,k);
+    double wart = 0;
+    for(int i = 0; i < w; i++){
+        for(int j = 0; j < k; j++){
+            wart = this->get(i, j) + m2.get(i, j);
+			wynik->set(i, j, wart);
+        }
+    }
+    return wynik;
+}
+
+Matrix* Matrix ::operator-(Matrix &m2){
+    if((w != m2.w) || (k != m2.k)){
+        cout<< ("Bląd rozmiaru macierzy.") <<endl;
+    }
+    Matrix *wynik= new Matrix(w, k);
+    double wart = 0;
+    for(int i = 0; i < w; i++){
+        for(int j = 0; j < k; j++){
+           wart = this->get(i, j) - m2.get(i, j);
+        
+			wynik->set(i, j, wart);
+        }
+    }
+    return wynik;
+}
+
+Matrix* Matrix ::operator* (Matrix &m2){
+    if(k != m2.w){
+        cout<< ("Bląd rozmiaru macierzy.") <<endl;
+    }
+    Matrix* wynik = new Matrix(w, m2.k);
+	double wart;
+	for (int i = 0; i < w; i++){
+		for (int j = 0; j < m2.k; j++){
+			wart = 0;
+			for (int s = 0; s < k; s++){
+				wart += get(i, s) * m2.get(s, j);
+			}
+			wynik->set(i, j, wart);
+		}
+	}
+    return wynik;
+}
+
+bool Matrix::operator==(Matrix &m2){
+	if(this->w == m2.w && this->k == m2.k){
+		for (int i = 0; i < m2.w; i++){
+			for (int j = 0; j < m2.k; j++){
+				if (this->get(i, j) != m2.get(i, j)) return false;
+			}
+		}
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+double* Matrix::operator[](int i){
+	if (i >= this->w) {
+		cout << "Błąd przy pobieraniu listy elementow" << endl;
+        
+	}
+	return this->macierz[i];
+}
+
+bool Matrix::operator!=(Matrix &m2){
+	if (this->w != m2.w || this->k != m2.k){
+		return true;
+	}
+	for (int i = 0; i < m2.w; i++){
+		for (int j = 0; j < m2.k; j++){
+			if (this->get(i, j) == m2.get(i, j)){
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+
+void Matrix::operator++(int){
+    double wart = 0;
+	for (int i = 0; i < this->w; i++){
+		for (int j = 0; j < this->k; j++){
+			wart = this->get(i, j) + 1.0;
+			this->set(i, j, wart);
+		}
+	}
+}
+
+void Matrix::operator--(int){
+    double wart = 0;
+	for (int i = 0; i < this->w; i++){
+		for (int j = 0; j < this->k; j++){
+			wart = this->get(i, j) - 1.0;
+			this->set(i, j, wart);
+		}
+	}
+}
+
+//
 // dodatkowy konstruktor jako argument przyjmujący ścieżkę do pliku o podanym wcześniej formacie i na jego podstawie tworzący nową macierz na podstawie przekazanego pliku
 Matrix::Matrix(string filename){
 try{
@@ -89,7 +199,7 @@ double Matrix::get(int n, int m){
         throw runtime_error("Bląd podczas pobierania elementow.");
 
     }
-
+/*
  // add(Matrix m2) - metoda przyjmująca jako argument inną macierz i zwracająca jako wynik nową macierz będącą sumą bieżącej macierzy oraz macierzy przekazanej jako argument
 Matrix* Matrix::add(Matrix &m2){
 try{
@@ -156,7 +266,7 @@ try{
         cerr << e.what() << endl;
     }
 }
-
+*/
 // cols() - metoda zwracająca liczbę kolumn macierzy
 int Matrix::cols(){
     return k;
