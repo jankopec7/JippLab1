@@ -90,17 +90,7 @@ int main(){
 		cout << wsk[i] << " ";
 	}
     cout << endl;
-    
-/*
-	double* ptr = m5[0];
-	rozmiar = _msize(ptr) / sizeof(double);
 
-	cout << "[] operator ([0]) returns:\n";
-	for (size_t i = 0; i < size; i++) {
-		cout << ptr[i] << " ";
-	}
-	cout << "\n\n";
-*/
 /*
     cout << "Tworze dwie macierze 4x4:" << endl;
     Matrix m1 = Matrix(4);  
