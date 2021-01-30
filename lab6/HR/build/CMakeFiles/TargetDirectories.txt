@@ -1,0 +1,3 @@
+/Users/jankopec/Desktop/jipplab/JippLab1/lab6/HR/build/CMakeFiles/rebuild_cache.dir
+/Users/jankopec/Desktop/jipplab/JippLab1/lab6/HR/build/CMakeFiles/edit_cache.dir
+/Users/jankopec/Desktop/jipplab/JippLab1/lab6/HR/build/CMakeFiles/zadanie.dir
